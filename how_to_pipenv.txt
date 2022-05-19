@@ -1,0 +1,60 @@
+https://docs.python-guide.org/dev/virtualenvs/
+https://www.codingforentrepreneurs.com/blog/pipenv-virtual-environments-for-python
+https://medium.com/analytics-vidhya/python-virtual-environment-using-pipenv-22010a8bb1c2
+
+
+Requirements
+1.	Git bash
+2.	Python
+3.	(optional) flask
+4.	(optional) Django
+5.  virtualenvwrapper - for easier management of individual isolated venv
+6.  requirement.txt
+
+Tips & Tricks
+Using $ pipenv run ensures that your installed packages are available to your script. 
+It’s also possible to spawn a new shell that ensures all commands have access to your 
+installed packages with $ pipenv shell.
+
+Steps (pipenv)
+1.	Install pipenv
+    $ Pip install pipenv
+
+2.	Find location of where you want to save and create a folder
+3.	go to your project's directory
+    $ cd <project directory>
+    #example below for Bash:
+    $ cd "C:/Users/dataz/Desktop"
+    #example below if run in Bash:
+    $ cd C:\Users\dataz\Desktop
+4.  OPTIONAL: select python version if dont prefer default version
+    $ pipenv --python <version of choice>
+5.  Install requests library (which creates the actual environment)
+    $ pipenv install requests
+6.  start the new virtual environment
+    $ pipenv shell    
+7.  install jupyter notebook kernel in the virtual environment
+    $ pipenv install ipykernel
+8.  restart VS code and re-select ipynb kernel to the newly created virtual environment
+9.  bottom right corner, select the interpreter to the new pipenv kernel   
+
+***DONT USE YET***
+Steps (virtualenv)
+1.	Install pipenv, virtualenv (only if you want isolated virtual environment), virtualenvwrapper
+    $ Pip install virtualenv
+    $ pip install virtualenvwrapper
+2.	Find location of where you want to save
+3.	Type the following in git bash
+    $ cd <project directory>
+    #example below for Bash:
+    $ cd "C:/Users/dataz/Desktop"
+4.  #create a venv called myproject in the current directory
+    $ python -m venv myproject
+5.  # activate the venv (make sure you are in the right source)
+    $ myproject\Scripts\activate
+6.  install requests
+    $ pip install requests
+7.  run scripts!
+    $ virtualenv run XXX.py
+8.  deactivate
+    $ deactivate
