@@ -23,3 +23,5 @@ function renderLeads() {
     }
     ulEl.innerHTML = listItems  
 }
+
+console.log(localStorage.getItem("myLeads"))
