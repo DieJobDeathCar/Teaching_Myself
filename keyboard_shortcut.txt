@@ -1,0 +1,5 @@
+CTRL + F2: select and edit same phrases/words
+CTRL + SHIFT + L: same thing
+
+CTRL + / : comment every single lines (only works in scripts)
+CTRL + SHIFT + P: command palette
